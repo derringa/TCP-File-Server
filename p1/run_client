@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gcc -o client chat_client.c
+client $1 $2 $3
