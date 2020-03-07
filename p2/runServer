@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ runServer.cpp FTServer.cpp -std=c++0x -lpthread -o server
+server $1

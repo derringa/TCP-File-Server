@@ -1,0 +1,24 @@
+Author: Andrew Derringer
+Course: CS372 Intro to Networking Winter 2020
+Program: Project 2 TCP File Client/Server
+
+Extra Credit:	[1] Multi-thread server.
+		[2] Allow client to change directory. Subdirectories named, .. for back.
+
+Notes:		Program tested on osu flip server with multiple windows on same and
+		seperate directories. Host input always as locahost.
+
+Server:		Bash script provided to compile and execute server. Run in background.
+ex:		runServer portnum &
+		runServer 55558 &
+
+Client:		Bash script also provided to run python client. Run in foreground.
+ex:		runClient host portnum command entity
+		runClient localhost 55558 -g my_file.txt
+
+Commands:	[1] "-l" returns a list of files in server working directory.
+		[2] "g filename" copies file from server directory into client directory.
+		[3] "-d" returns a list of subdirectories and parent directory from server.
+		[4] "cd directory" changes the server working directory.
+
+
